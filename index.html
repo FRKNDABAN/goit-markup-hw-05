@@ -505,17 +505,17 @@
         <h3>Subscribe</h3>
 
         <form class="subscribe_form">
+          <div class="sub-bar">
+            <input type="email" name="email" placeholder="E-mail" required />
+            <button type="submit">Subscribe<span class="icon-send">
 
-          <input type="email" name="email" placeholder="E-mail" required />
-          <button type="submit">Subscribe<span class="icon-send">
+                <svg class="icon">
+                  <use xlink:href="./images//symbol-defs2.svg#icon-send" />
+                </svg>
+              </span>
 
-              <svg class="icon">
-                <use xlink:href="./images//symbol-defs2.svg#icon-send" />
-              </svg>
-            </span>
-
-          </button>
-
+            </button>
+          </div>
         </form>
 
       </div>
@@ -541,17 +541,32 @@
           <div class="modal_form">
 
             <label for="name">Name</label>
-            <input class="modal_text" type="text" name="name" required />
+            <div class="name_bar">
+              <input class="modal_text" type="text" id="name" name="name" placeholder="Name and surname" required />
+              <svg class="person_icon">
+                <use xlink:href="./images/symbol-defs2.svg#icon-person" />
+              </svg>
+            </div>
 
             <label for="phone">Phone</label>
-            <input class="modal_text" type="tel" name="phone" minlength="11" maxlength="11" required />
+            <div class="tel_bar">
+              <input class="modal_text" type="tel" id="phone" name="phone" minlength="11" maxlength="11"
+                placeholder="Phone" required />
+              <svg class="tel_icon">
+                <use xlink:href="./images/symbol-defs2.svg#icon-phone" />
+              </svg>
+            </div>
 
             <label for="email">E-mail</label>
-            <input class="modal_text" type="email" name="email" placeholder="E-mail" required />
-
+            <div class="mail_bar">
+              <input class="modal_text" type="email" id="email" name="email" placeholder="E-mail" required />
+              <svg class="mail_icon">
+                <use xlink:href="./images/symbol-defs2.svg#icon-mail" />
+              </svg>
+            </div>
             <label for="comment">Comment</label>
             <!-- <input class="comment_text" type="text" name="comment" required />  -->
-            <textarea class="comment_text" name="comment" rows="5" cols="120"
+            <textarea class="comment_text" id="comment" name="comment" rows="5" cols="120"
               placeholder="Enter your message here..."></textarea>
           </div>
 
